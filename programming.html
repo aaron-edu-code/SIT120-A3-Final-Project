@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Setting of HTML page, allowing IDE to properly interpret HTML codes -->
+<html lang="en"> <!-- HTML language setting -->
+
+<!-- The programming tools homepage, containing links to the the various design tools HTML pages -->
+
+<head>
+    <!-- Responsive viewport codes, allowing pages to scale with device screen size -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS stylesheet, allowing HTML elements to by styled by CSS codes -->
+    <title>Programming</title> <!-- Title of current webpage -->
+</head>
+
+<div class="navbar">
+    
+    <!-- The navigation bar code, which implements a series of links allowing the user
+         to navigate the website. Used across all pages of the website -->
+
+    <a href="index.html">Home</a> <!-- Link to home page -->
+    <a class="active" href="programming.html">Programming</a> <!-- Link to design page -->
+    <a href="design.html">Design</a> <!-- Link to design page -->
+    <a href="about.html">About</a> <!-- Link to about page -->
+    <a href="contact.html">Contact</a> <!-- Link to contact page -->
+    <img id="siteLogo" src="Developing Developers-logos_black copy.png" alt="Site Logo"> <!-- Website logo, placed within navigation bar -->
+</div>
+
+<body> <!-- HTML body opening tag. All visually displayed elements of webpage to user found within body -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <!-- Link to Vue framework, allowing project to utilise Vue JavaScript apps -->
+
+    <div id="prop">
+
+        <!-- The about page paragraph text, implemented as div via JavaScript prop component.
+        Functionality provided by linked JavaScript page at the bottom of code page. Further 
+        explanation within JavaScript components file -->
+        <component7 text="Welcome to the programming languages page. Select the language you wish to learn about below">
+        </component7>
+    </div>
+
+
+    <figure>
+        <!-- A figure, containing the technolgy tool logo, a link to the tool webpage and the logo caption underneath -->
+        <a href="c.html">
+            <!-- The link the C# HTML page -->
+            <img src="https://www.techbaz.org/Course/img/csharp-logo.png" alt="C# logo"
+                style="width:280px;height:280px;" class="cSharp">
+            <!-- The link the C# logo, plus styling and class assignment -->
+            <figcaption>C#</figcaption> <!-- The caption beneath the logo -->
+        </a>
+    </figure>
+
+    <figure>
+        <!-- A figure, containing the technolgy tool logo, a link to the tool webpage and the logo caption underneath -->
+        <a href="javascript.html">
+            <!-- The link the JavaScript HTML page -->
+            <img src="https://images.weserv.nl/?url=https%3A%2F%2Fcodedamn-blog.s3.amazonaws.com%2Fwp-content%2Fuploads%2F2022%2F03%2F07094630%2Fjs2.png&w=1920&q=75&output=webp"
+                alt="JavaScript logo" style="width:300px;height:220px;" class="JS">
+            <!-- The link the JavaScript logo, plus styling and class assignment -->
+            <figcaption>JavaScript</figcaption> <!-- The caption beneath the logo -->
+        </a>
+    </figure>
+
+    <figure>
+        <!-- A figure, containing the technolgy tool logo, a link to the tool webpage and the logo caption underneath -->
+        <a href="python.html">
+            <!-- The link the Python HTML page -->
+            <img src="https://staging.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python logo"
+                style="width:300px;height:200px;" class="Python">
+            <!-- The link the Python logo, plus styling and class assignment -->
+            <figcaption>Python</figcaption> <!-- The caption beneath the logo -->
+        </a>
+    </figure>
+
+</body> <!-- HTML body closing tag -->
+
+<!-- Links to JavaScript components file, allowing 
+    pages to access JavaScript code components  -->
+<script src="javaComponents.js"></script>
+
+</html> <!-- Closing of HTML code page, telling the IDE where to stop looking for HTML codes -->
