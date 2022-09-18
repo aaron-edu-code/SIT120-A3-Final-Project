@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Setting of HTML page, allowing IDE to properly interpret HTML codes -->
+<html lang="en"> <!-- HTML language setting -->
+
+<!-- About webpage, further describing the purpose of the website to users -->
+
+<head>
+    <!-- Responsive viewport codes, allowing pages to scale with device screen size -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS stylesheet, allowing HTML elements to by styled by CSS codes -->
+    <title>About</title> <!-- Title of current webpage -->
+</head>
+
+<div class="navbar">
+
+    <!-- The navigation bar code, which implements a series of links allowing the user
+         to navigate the website. Used across all pages of the website -->
+
+    <a href="index.html">Home</a> <!-- Link to home page -->
+    <a href="programming.html">Programming</a> <!-- Link to programming page -->
+    <a href="design.html">Design</a> <!-- Link to design page -->
+    <a class="active" href="about.html">About</a> <!-- Link to about page -->
+    <a href="contact.html">Contact</a> <!-- Link to contact page -->
+    <img id="siteLogo" src="Developing Developers-logos_black copy.png" alt="Site Logo"> <!-- Website logo, placed within navigation bar -->
+</div>
+
+<body> <!-- HTML body opening tag. All visually displayed elements of webpage to user found within body -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <!-- Link to Vue framework, allowing project to utilise Vue JavaScript apps -->
+
+    <div id="prop">
+        
+        <!-- The about page paragraph text, implemented as div via JavaScript prop component.
+        Functionality provided by linked JavaScript page at the bottom of code page. Further 
+        explanation within JavaScript components file -->
+        <component7 text="Developing Developers is an independent website that aims to teach students 
+            and anyone else intrested the basics of what a technology or design tool is most 
+            commonly used for, and its history! ">
+        </component7>
+    </div>
+
+</body> <!-- HTML body closing tag -->
+
+<!-- Links to JavaScript components file, allowing 
+    pages to access JavaScript code components  -->
+<script src="javaComponents.js"></script>
+
+</html> <!-- Closing of HTML code page, telling the IDE where to stop looking for HTML codes -->
