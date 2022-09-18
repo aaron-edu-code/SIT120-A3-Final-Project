@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!-- Setting of HTML page, allowing IDE to properly interpret HTML codes -->
+<html lang="en"> <!-- HTML language setting -->
+
+<!-- Technology tool webpage, containing information relating to the technology tool selected by the user -->
+
+<head>
+    <!-- Responsive viewport codes, allowing pages to scale with device screen size -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to CSS stylesheet, allowing HTML elements to by styled by CSS codes -->
+    <title>Figma</title> <!-- Title of current webpage -->
+</head>
+
+<div class="navbar">
+
+    <!-- The navigation bar code, which implements a series of links allowing the user
+         to navigate the website. Used across all pages of the website -->
+
+    <a href="index.html">Home</a> <!-- Link to home page -->
+    <a href="programming.html">Programming</a> <!-- Link to design page -->
+    <a class="active" href="design.html">Design</a> <!-- Link to design page -->
+    <a href="about.html">About</a> <!-- Link to about page -->
+    <a href="contact.html">Contact</a> <!-- Link to contact page -->
+    <img id="siteLogo" src="Developing Developers-logos_black copy.png" alt="Site Logo"> <!-- Website logo, placed within navigation bar -->
+</div>
+
+<body> <!-- HTML body opening tag. All visually displayed elements of webpage to user found within body -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <!-- Link to Vue framework, allowing project to utilise Vue JavaScript apps -->
+
+    <div id="figmaHeading">
+        <!-- The page heading, implemented as div via JavaScript locally registered component.
+        Functionality provided by linked JavaScript page at the bottom of code page. Further 
+        explanation within JavaScript components file -->
+        <component4></component4>
+        {{ text }}
+    </div>
+
+    <figure>
+        <!-- A figure, containing the technolgy tool logo and logo caption underneath -->
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/figma-1-logo-png-transparent.png" alt="Figma logo"
+            style="width:200px;height:250px;" class="Figma">
+        <!-- The link to the Figma logo, plus styling (size) and class assignment, allowing access in linked CSS file -->
+        </a>
+    </figure>
+
+    <div id="mouseHoverDoc">
+        <!-- mouse hover div for vendor link, further explained below -->
+        <!-- The mouse hover link div tells the user where the hyperlink they are hovering the mouse over will
+        take them before clicking. Implemented via JavaScript Vue app as event handling component.
+        Vue app can be seen near bottom of code page -->
+        <p @mouseover="hoverOverLink(true)" @mouseleave="hoverOverLink(false)">
+            <!-- sets the mouse hover state to true or false depending on mouse position -->
+            <a href="https://www.figma.com/?fuid=">Official Vendor Link</a>
+            <!-- The particular hyperlink being examined by the code, plus the 
+                message to be displayed when mouse hover is true  -->
+            <br> {{ message }}
+            <!-- Displays the message when mouse hover is true beneath hyperlink -->
+        </p>
+    </div>
+
+    <div id="mouseHoverTut">
+        <!-- mouse hover div for tutorial link -->
+        <!-- Second mouse hover link div, functionally identical to the one explaned above -->
+        <p @mouseover="hoverOverLink(true)" @mouseleave="hoverOverLink(false)">
+            <a href="https://www.figma.com/resources/learn-design/">Technology Tutorials</a>
+            <br> {{ message }}
+        </p>
+    </div>
+
+    <h2> What is Figma?</h2> <!-- A text heading, used to introduce a written topic -->
+
+    <div class="loremIpsum">
+        <!-- Div class containing Lorum Ipsum placeholder text, in place of technology tool information. 
+        Used to demonstrate where detailed information regarding the users selected tchnology tool 
+        would be seen on webpage -->
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ac nisl nec tincidunt. Duis ac dui ac
+        nulla egestas ullamcorper. Nullam dolor ligula, faucibus sit amet quam a, molestie blandit lectus. Suspendisse
+        neque sapien, scelerisque ut facilisis id, vehicula sit amet risus. Vestibulum ante ipsum primis in faucibus
+        orci luctus et ultrices posuere cubilia curae; Sed pharetra felis sit amet ex bibendum laoreet. Maecenas nec
+        mauris vel nulla finibus eleifend. Ut rhoncus rutrum nulla ut feugiat. Ut mollis eros in mi dapibus, at
+        tincidunt erat facilisis. Ut varius gravida arcu, quis mattis nisi tincidunt a. Nam sed turpis tincidunt,
+        maximus quam sit amet, sollicitudin elit. Phasellus at cursus dolor. Suspendisse et felis et nisl scelerisque
+        egestas. Maecenas sit amet consequat augue. Aliquam in sapien tempus, ullamcorper purus sit amet, scelerisque
+        libero.
+
+        Quisque lacus neque, pharetra nec mauris a, pellentesque volutpat nunc. Integer malesuada nisi quis quam
+        accumsan rhoncus. Donec eget aliquet mauris. Etiam nec tortor venenatis, gravida tellus vitae, congue nisl.
+        Donec sit amet pellentesque sapien. Donec gravida massa faucibus dolor pellentesque, vitae convallis velit
+        vehicula. Ut rutrum tempus purus vitae suscipit. Sed aliquet lacus ac mauris rhoncus consequat. Cras efficitur,
+        leo quis venenatis posuere, sapien nulla imperdiet velit, sed varius ipsum quam eget orci. Fusce quis dolor
+        tortor.
+
+    </div>
+
+    <h2> What Kind of Projects is it Used For?</h2> <!-- A text heading, used to introduce a written topic -->
+
+    <div class="loremIpsum">
+        <!-- Div class containing Lorum Ipsum placeholder text, in place of technology tool information. 
+        Used to demonstrate where detailed information regarding the users selected tchnology tool 
+        would be seen on webpage -->
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ac nisl nec tincidunt. Duis ac dui ac
+        nulla egestas ullamcorper. Nullam dolor ligula, faucibus sit amet quam a, molestie blandit lectus. Suspendisse
+        neque sapien, scelerisque ut facilisis id, vehicula sit amet risus. Vestibulum ante ipsum primis in faucibus
+        orci luctus et ultrices posuere cubilia curae; Sed pharetra felis sit amet ex bibendum laoreet. Maecenas nec
+        mauris vel nulla finibus eleifend. Ut rhoncus rutrum nulla ut feugiat. Ut mollis eros in mi dapibus, at
+        tincidunt erat facilisis. Ut varius gravida arcu, quis mattis nisi tincidunt a. Nam sed turpis tincidunt,
+        maximus quam sit amet, sollicitudin elit. Phasellus at cursus dolor. Suspendisse et felis et nisl scelerisque
+        egestas. Maecenas sit amet consequat augue. Aliquam in sapien tempus, ullamcorper purus sit amet, scelerisque
+        libero.
+
+        Quisque lacus neque, pharetra nec mauris a, pellentesque volutpat nunc. Integer malesuada nisi quis quam
+        accumsan rhoncus. Donec eget aliquet mauris. Etiam nec tortor venenatis, gravida tellus vitae, congue nisl.
+        Donec sit amet pellentesque sapien. Donec gravida massa faucibus dolor pellentesque, vitae convallis velit
+        vehicula. Ut rutrum tempus purus vitae suscipit. Sed aliquet lacus ac mauris rhoncus consequat. Cras efficitur,
+        leo quis venenatis posuere, sapien nulla imperdiet velit, sed varius ipsum quam eget orci. Fusce quis dolor
+        tortor.
+
+    </div>
+
+    <h2> Is it Suitable For My Project?</h2> <!-- A text heading, used to introduce a written topic -->
+
+    <div class="loremIpsum">
+        <!-- Div class containing Lorum Ipsum placeholder text, in place of technology tool information. 
+        Used to demonstrate where detailed information regarding the users selected tchnology tool 
+        would be seen on webpage -->
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ac nisl nec tincidunt. Duis ac dui ac
+        nulla egestas ullamcorper. Nullam dolor ligula, faucibus sit amet quam a, molestie blandit lectus. Suspendisse
+        neque sapien, scelerisque ut facilisis id, vehicula sit amet risus. Vestibulum ante ipsum primis in faucibus
+        orci luctus et ultrices posuere cubilia curae; Sed pharetra felis sit amet ex bibendum laoreet. Maecenas nec
+        mauris vel nulla finibus eleifend. Ut rhoncus rutrum nulla ut feugiat. Ut mollis eros in mi dapibus, at
+        tincidunt erat facilisis. Ut varius gravida arcu, quis mattis nisi tincidunt a. Nam sed turpis tincidunt,
+        maximus quam sit amet, sollicitudin elit. Phasellus at cursus dolor. Suspendisse et felis et nisl scelerisque
+        egestas. Maecenas sit amet consequat augue. Aliquam in sapien tempus, ullamcorper purus sit amet, scelerisque
+        libero.
+
+        Quisque lacus neque, pharetra nec mauris a, pellentesque volutpat nunc. Integer malesuada nisi quis quam
+        accumsan rhoncus. Donec eget aliquet mauris. Etiam nec tortor venenatis, gravida tellus vitae, congue nisl.
+        Donec sit amet pellentesque sapien. Donec gravida massa faucibus dolor pellentesque, vitae convallis velit
+        vehicula. Ut rutrum tempus purus vitae suscipit. Sed aliquet lacus ac mauris rhoncus consequat. Cras efficitur,
+        leo quis venenatis posuere, sapien nulla imperdiet velit, sed varius ipsum quam eget orci. Fusce quis dolor
+        tortor.
+
+    </div>
+
+    <script> // Script tag open, allowing JavaScript code to be executed within HTML file
+
+        new Vue({ // Vue app for vendor link mouse hover div, further explaned below 
+            // Vue application providing functionality for mouse hover div. 
+            // This is a basic reusable component, seen across multiple pages in the project 
+            el: "#mouseHoverDoc",
+            data: {
+                hover: false // Data utilised by Vue app
+            },
+            computed: { // Compute method, which handles the reactive aspects of the Vue app
+                message() {
+                    return this.hover === true ? "Figma.com" : ""; // If the condition is true, (mouse is hovering over hyperlink) 
+                    // the message will be displayed on screen to the user 
+                },
+            },
+            methods: {
+                hoverOverLink(a) {
+                    this.hover = a; // The object associated with the Vue app, providing the mouse hover functionality 
+                }
+            }
+        });
+
+    </script> <!-- Script tag close, indicating end of JavaScript code (for this object) -->
+
+    <script> // Script tag open, allowing JavaScript code to be executed within HTML file
+
+        new Vue({ // Vue app for tutorial link mouse hover div, functionally identical to one explained above
+            el: "#mouseHoverTut",
+            data: {
+                hover: false
+            },
+            computed: {
+                message() {
+                    return this.hover === true ? "Figma Tutorials" : "";
+                },
+            },
+            methods: {
+                hoverOverLink(a) {
+                    this.hover = a;
+                }
+            }
+        });
+
+    </script> <!-- Script tag close, indicating end of JavaScript code (for this object) -->
+
+</body> <!-- HTML body closing tag -->
+
+<!-- Links to JavaScript components file, allowing 
+    pages to access JavaScript code components  -->
+<script src="javaComponents.js"></script>
+
+</html> <!-- Closing of HTML code page, telling the IDE where to stop looking for HTML codes -->
